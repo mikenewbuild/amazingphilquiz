@@ -1,2 +1,3 @@
-# amazingphilquiz
- Landing page for The Amazing Phil Quiz
+# 🤓 The AmazingPhil Quiz
+
+The landing page for The AmazingPhil Quiz!
