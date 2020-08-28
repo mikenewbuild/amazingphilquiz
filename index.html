@@ -15,15 +15,34 @@
       background: linear-gradient(135deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
       display: flex;
       justify-content: center;
+      font-family: sans-serif;
+      font-weight: 700;
+      color: #fff;
     }
 
     .resp-iframe {
       border: 0;
-      background: rgb(238,174,202);
-      background: linear-gradient(65deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
       height: calc(100vh - 20px);
       max-width: calc(50vh - 20px);
+      z-index: 2;
     }
+
+    .notice {
+      position: absolute;
+      max-width: calc(50vh - 20px);
+      height: calc(100vh - 20px);
+      z-index: 1;
+      background: rgb(238,174,202);
+      background: linear-gradient(65deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+      font-size: 2.5vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .notice p {
+      padding: 1em;
+    }
+
   </style>
 </head>
 <body>
@@ -37,5 +56,16 @@
     allowfullscreen=""
     allow="autoplay"
   ></iframe>
+  <div class="notice">
+    <p>
+      👋 hi there,<br>
+      <br>
+      If you can see <i>this</i> 👀, you may need to disable
+      your adblocker to view the quiz (we load the
+      stream in from another site).<br>
+      <br>
+      Happy quizzing! 🌵
+    </p>
+  </div>
 </body>
 </html>
