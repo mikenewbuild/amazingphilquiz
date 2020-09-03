@@ -36,6 +36,10 @@
       width: calc((100vh - 20px) * 9/16);
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
     .notice {
       position: absolute;
       max-width: calc(50vh - 20px);
@@ -44,6 +48,15 @@
       font-size: 2.5vh;
       display: flex;
       align-items: center;
+    }
+
+    .notice.fade-in {
+      will-change: opacity;
+      opacity: 0;
+      animation: fadeIn ease-in 1;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
+      animation-delay: 2s;
     }
 
     .notice p {
@@ -63,6 +76,7 @@
       allowfullscreen
     ></iframe>
   </div>
+  <div class="notice fade-in">
     <p>
       👋 hi there,<br>
       <br>
